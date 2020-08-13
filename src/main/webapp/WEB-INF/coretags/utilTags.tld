@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>util</short-name>
+	<uri>http://nsmv.com.vn/util/taglib</uri>
+	<tag>
+		<name>fileCheck</name>
+		<tag-class>vn.com.nsmv.web.core.FileCheckTagUtil</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>file</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>jsLines</name>
+		<tag-class>vn.com.nsmv.web.core.MultiLineJsUtil</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>textContent</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>trimPart</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>jsObj</name>
+		<tag-class>vn.com.nsmv.web.core.ObjectTextJsUtil</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>textContent</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

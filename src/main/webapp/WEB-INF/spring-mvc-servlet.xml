@@ -27,9 +27,6 @@
 		<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
 			<property name="paramName" value="language" />
 		</bean>
-		<bean id="fledRequestInterceptor"
-          class="vn.com.quang.service.task.impl.FledRequestInterceptor">
-    </bean>
 	</mvc:interceptors>
 	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
 		<property name="defaultLocale" value="ja_JP" />

@@ -23,11 +23,11 @@
 		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
 <!-- 		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/fled?UseUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false" /> -->
 <!-- 		<property name="jdbcUrl" value="jdbc:mysql://172.18.101.22:33066/fled02?UseUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false" /> -->
-		<property name="jdbcUrl" value="jdbc:mysql://103.1.210.79:3306/fled?UseUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false" />
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/springmvc?UseUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false" />
 		<property name="user" value="root" />
 <!-- 		<property name="password" value="Srv@20181206" /> -->
 <!-- 		<property name="password" value="123456" /> -->
-		<property name="password" value="srv099999" />
+		<property name="password" value="1234" />
 		<property name="acquireIncrement" value="5" />
 		<property name="minPoolSize" value="10" />
 		<property name="maxPoolSize" value="300" />
@@ -40,38 +40,9 @@
 		<property name="dataSource" ref="myDataSource" />
 		<property name="annotatedClasses">
 			<list>
-				<value>vn.com.nsmv.entity.User</value>
-				<value>vn.com.nsmv.entity.GroupUser</value>
-				<value>vn.com.nsmv.entity.Company</value>
-				<value>vn.com.nsmv.entity.Dept</value>
-				<value>vn.com.nsmv.entity.MstEquipment</value>
-				<value>vn.com.nsmv.entity.Request</value>
-				<value>vn.com.nsmv.entity.ShizaiShosai</value>
-				<value>vn.com.nsmv.entity.Test</value>
-				<value>vn.com.nsmv.entity.Test3d</value>
-				<value>vn.com.nsmv.entity.Test3dContent</value>
-				<value>vn.com.nsmv.entity.TestEquipment</value>
-				<value>vn.com.nsmv.entity.TestNote</value>
-				<value>vn.com.nsmv.entity.TestSchedule</value>
-				<value>vn.com.nsmv.entity.TestShizai</value>
-				<value>vn.com.nsmv.entity.TestUser</value>
-				<value>vn.com.nsmv.entity.MsData</value>
-				<value>vn.com.nsmv.entity.TestOutUser</value>
-				<value>vn.com.nsmv.entity.TestFile</value>
-				<value>vn.com.nsmv.entity.TestHistory</value>
-				<value>vn.com.nsmv.entity.Answer</value>
-				<value>vn.com.nsmv.entity.Question</value>
-				<value>vn.com.nsmv.entity.FeedBack</value>
-				<value>vn.com.nsmv.entity.TestNoteFile</value>
-				<value>vn.com.nsmv.entity.AppConfig</value>
-				<value>vn.com.nsmv.entity.ApprovalStatus</value>
-				<value>vn.com.nsmv.entity.Comment</value>
-				<value>vn.com.nsmv.entity.CalManuTest</value>
-				<value>vn.com.nsmv.entity.Token</value>
-				<value>vn.com.nsmv.entity.AttendTraining</value>
-				<value>vn.com.nsmv.entity.Disaster</value>
-				<value>vn.com.nsmv.entity.ProtectionNotify</value>
-				<value>vn.com.nsmv.entity.MachineSpec</value>
+				<value>vn.com.quang.entity.User</value>
+				<value>vn.com.quang.entity.UserRole</value>
+				
 			</list>
 		</property>
 		<property name="hibernateProperties">

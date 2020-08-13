@@ -7,15 +7,19 @@
 
 	<global-method-security pre-post-annotations="enabled" />
 
-	<beans:bean id="userDao" class="vn.com.nsmv.dao.impl.UserDaoImpl">
+	<beans:bean id="userDao" class="vn.com.quang.dao.impl.UserDaoImpl">
+		<beans:property name="sessionFactory" ref="mySessionFactory" />
+	</beans:bean>
+	<beans:bean id="userRoleDao" class="vn.com.quang.dao.impl.UserRoleDaoImpl">
 		<beans:property name="sessionFactory" ref="mySessionFactory" />
 	</beans:bean>
 
-	<beans:bean id="customUserService" class="vn.com.nsmv.authentication.bean.CustomUserService" autowire="byName">
+	<beans:bean id="customUserService" class="vn.com.quang.authentication.bean.CustomUserService" autowire="byName">
 		<beans:property name="userDao" ref="userDao"></beans:property>
+		<beans:property name="userRoleDao" ref="userRoleDao"></beans:property>
 	</beans:bean>
 
-	<beans:bean id="authSuccessHandler" class="vn.com.nsmv.authentication.FledAuthenticationSuccessHandler">
+	<beans:bean id="authSuccessHandler" class="vn.com.quang.authentication.FledAuthenticationSuccessHandler">
 	</beans:bean>
 	
 	<http pattern="/resources/**" security="none">
@@ -29,6 +33,7 @@
 
 		<intercept-url pattern="/" access="hasRole('ROLE_U')or hasRole('ROLE_M') or hasRole('ROLE_A')" />
 		<intercept-url pattern="/user/**" access="hasRole('ROLE_U')or hasRole('ROLE_M') or hasRole('ROLE_A')" />
+		<intercept-url pattern="/admin" access="hasRole('ROLE_A')" />
 
 		<intercept-url pattern="/*" access="isAuthenticated()" />
 

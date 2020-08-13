@@ -16,9 +16,9 @@
 	<tx:annotation-driven proxy-target-class="true"
 		transaction-manager="txManager" />
 
-	<context:component-scan base-package="vn.com.nsmv.dao.impl" />
-	<context:component-scan base-package="vn.com.nsmv.dao" />
-	<context:component-scan base-package="vn.com.nsmv.service.impl" />
+	<context:component-scan base-package="vn.com.quang.dao.impl" />
+	<context:component-scan base-package="vn.com.quang.dao" />
+	<context:component-scan base-package="vn.com.quang.service.impl" />
 	
 	<bean id="txManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">

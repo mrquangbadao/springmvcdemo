@@ -1,0 +1,81 @@
+<!-- Task #4683 -->
+/*
+	03. 申請（加工・役務）_Gia công
+	04. 申請（３Dプリンタ）_In3D
+	05. 申請（KYT）_KYT
+	06. 申請（添付ファイル)_Đính kèm file
+	08. 申請（計測機器選択）_Chọn máy
+	09. 申請（申請・承認）_Đăng ký/phê duyệt
+	11. 申請（実績登録）_Đăng ký timesheet
+	12. 申請（実績参照） _Tham chiếu timesheet
+	13. 申請（フィードバック）_Feedback
+	21. 試験開始_Bắt đầu thí nghiệm, 14. 試験終了_Kết thúc thí nghiệm
+	15. 在庫一覧 _Danh sách lưu kho
+	24. おしらせ登録_Đăng ký thông báo
+	16. 延長依頼_Yêu cầu gia hạn
+	23. 試験概要_Khái quát thí nghiệm(custom - not user class container-fluid-custom)
+	26. 実績集計レポート (recustom)
+	27. 計測器マスタメンテ
+*/
+body{
+	min-width: 1366px;
+	overflow: auto;
+}
+@media (width : 1366px) {
+	
+	.container-fluid-custom{
+		min-width: 1300px;
+		margin-left: 15px !important; 
+		
+	}
+	body {
+		overflow-x: hidden !important;
+	}
+}
+
+@media (max-width : 1365px) {
+	
+	.container-fluid-custom{
+		min-width: 1300px;
+ 		margin-left: 15px !important; 
+	}
+	.header, #main-menu1 {
+		width: 1365px;
+	}
+	.nav_menu {
+		width: 1365px !important;
+	}
+}
+
+@media (max-width : 768px) {
+	.nav_menu {
+		
+	}
+	.navbar-left {
+	    float: left !important;
+	    margin-left: 15px;
+	}
+	.navbar-right {
+	    float: right !important;
+	    width: 900px;
+	    position: absolute;
+	    right: -320px;
+	}
+	.navbar-right li:nth-child(1) {
+	   min-width: 115px;
+	   float: left;
+	} 
+	.navbar-right li:nth-child(2) {
+	    min-width: 115px;
+    	float: left;
+	} 
+	.navbar-right li:nth-child(3) {
+       width: 115px !important;
+	   float: left;
+	} 
+	.body_container {
+		margin-top: 0;
+	}
+}
+
+<!-- End Task #4683 -->

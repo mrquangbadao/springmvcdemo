@@ -1,0 +1,131 @@
+.form-item {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.form-text {
+	margin: 0;
+	line-height: 34px;
+}
+.form-right {
+	text-align: right;
+	padding-right: 15px;
+}
+.form-label-left {
+	margin-left: 15px;
+}
+.form-full {
+	margin: 0 15px;
+	padding-right: 35px;
+}
+.form-center {
+	margin: 0 auto;
+	float: none;
+}
+.form-center-2, .row .form-center-2 {
+	margin: 0 15px 0 -15px;
+}
+.form-center-small {
+	margin: 0 35px;
+}
+.form-required {
+	width: 25px;
+	margin-left: -25px;
+	float: left;
+	padding: 0;
+}
+
+.form-required::before {
+	display: inline-block;
+	content: '*';
+	color: red;
+}
+
+.color-white::before, .color-white::after {
+	color: #fff;
+}
+
+.form-input {
+	/* float: right; */
+	/* width: 90%; */
+	padding: 0px;
+	width: auto;
+	/* overflow-x: hidden;
+	overflow-y: visible; */
+	float: none;
+}
+
+.form-input .form-control {
+	width: 100%;
+}
+td.controls .form-control {
+	display: inline;
+	min-width: 60px;
+	max-width: 90px;
+}
+td.controls > div {
+	display: inline-block;
+	width: 100%;
+}
+
+.input-required, .input-required button, .input-required:visited, .input-required:focus {
+	background-color: rgb(255, 254, 204) !important;
+	outline: none;
+}
+
+.input-required .select2-selection {
+	background-color: rgb(255, 254, 204) !important;
+}
+
+.input-green, .input-green button, .input-green:visited, .input-green:focus {
+	background-color: rgb(153, 255, 153) !important;
+	outline: none;
+}
+
+.tranlateX-sm-53 {
+	transform: translateX(-53px);
+}
+
+.tranlateX-sm-60 {
+	transform: translateX(-60px);
+}
+
+.tranlateX-sm-65 {
+	transform: translateX(-65px);
+}
+
+.tranlateX-sm-90 {
+	transform: translateX(-90px);
+}
+
+.tranlateX-sm-98 {
+	transform: translateX(-98px);
+}
+
+.item-note {
+	width: 68px;
+	text-align: right
+}
+
+.form-label, label, input, textarea, select, .text {
+	color: rgb(70, 70, 70);
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover
+	{
+	color: rgb(70, 70, 70);
+}
+
+@media ( max-width : 1366px) {
+/* 	.form-label {
+		width: 160px;
+	} */
+	.-tranlateX-xs-33 {
+		transform: translateX(-33px);
+	}
+	._tranlateX-xs-58 {
+		transform: translateX(-58px);
+	}
+	._tranlateX-xs-40 {
+		transform: translateX(-40px);
+	}
+}

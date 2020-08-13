@@ -1,0 +1,121 @@
+.calendar-month li, .calendar-week li, .cell {
+    display: table-cell;
+    width: 59px;
+    border-top: solid 1px #000;
+    border-left: solid 1px #000;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color:  #000;
+}
+
+.calendar-month li {
+    border-bottom: transparent;
+}
+
+ul {
+    padding: 0px;
+    margin-bottom: 0;
+}
+
+#calendar ul li:first-child {
+    /* border-left: transparent; */
+    /* border-top: transparent; */
+}
+
+.row-job li {
+    border: none;
+}
+
+.cell.border-none {
+    border: none;
+}
+
+#calendar {
+    height: 70vh;
+    overflow: auto;
+}
+
+.cell.st-1 {
+    background-color: rgb(153, 255, 102);
+    border: transparent;
+    color: #000;
+}
+
+.cell.st-2 {
+    background-color: rgb(255, 102, 255);
+    border: transparent;
+    color: #000;
+}
+
+.cell.st-3 {
+    border: transparent;
+}
+.cell.st-3,.cell.st-2, .cell.st-1 {
+    text-align: left;
+    /* overflow: hidden; */
+ }
+
+ .st-3>div, .st-2>div,  .st-1>div{
+     padding-left: 5px;
+ }
+ 
+ .content-name{
+     display: block;
+     min-width: 300px;
+ }
+
+ .date-sat {
+     background-color: rgb(204, 255, 255);
+     color: rgb(0, 51, 204);
+ }
+
+ .date-sun {
+    background-color: rgb(255, 204, 255);
+    color: rgb(255, 0, 0);
+}
+
+.date-now {
+    background-color:rgb(255, 255, 0);
+}
+
+.calendar-header {
+    border: 1px solid #000;
+    border-top: transparent;
+    border-left: transparent;
+}
+
+.calendar-body {
+    border: 1px solid #000;
+    border-top: transparent;
+}
+
+.calendar-body{
+    border-bottom: transparent;
+}
+
+.calendar-body:last-child {
+    border-bottom: 1px solid #000;
+}
+.cal-placeholder {
+    color: #fff;
+}
+
+@media(max-width: 1366px) {
+    .cell {
+        /* width: 39px !important; */
+        font-size: 10px;
+    }
+    .data-content {
+        /* width: 39px; */
+        font-size: 10px;
+    }
+    .calendar-week .data-content {
+        /* width: 59px; */
+    }
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+

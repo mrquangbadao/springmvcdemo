@@ -1,0 +1,107 @@
+.loginblock {
+	width: 400px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #B1BFC4;
+	padding-bottom: 36px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189, 0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	box-shadow: 0pt 2px 4px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 4px;
+}
+
+.compinfo {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.loginblock h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font: normal 25px Helvetica, Arial, sans-serif;
+}
+
+.loginblock p {
+	color: #ff0000;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.loginblock .hidden {
+	display: none;
+}
+
+.loginblock .login_form {
+	
+}
+
+.loginblock .logininput {
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.loginblock .logininput input {
+	width: 100%;
+	height: 36px;
+	border: 1px solid #A2A3A3;
+	padding: 8px 8px 8px 8px;
+	box-sizing: border-box;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	outline: none;
+}
+
+.loginblock .logininput .error {
+	color: #ff0000;
+}
+
+.loginblock .loginaction {
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+
+.loginblock .submit {
+	cursor: pointer;
+	background: rgb(61, 157, 179);
+	padding: 8px 12px;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	border: 1px solid rgb(28, 108, 122);
+	margin-bottom: 10px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.compinfo .separator {
+	text-align: center;
+	border-top: 1px solid #D8D8D8;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.compinfo h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font: normal 25px Helvetica, Arial, sans-serif;
+}
+
+.compinfo p {
+	font-family: Arial;
+	margin-top: 32px;
+	font-size: 16px;
+}

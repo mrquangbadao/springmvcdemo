@@ -1,0 +1,405 @@
+#calendar-schedule {
+	margin-top: 10px;
+}
+
+#calendar-schedule table {
+	border: 1px solid #000 !important;
+	box-shadow: none;
+	width: 100%;
+	border-radius: 0;
+}
+
+#calendar-schedule thead {
+	background-color: #fff;
+	color: #000;
+}
+
+#calendar-schedule .table>thead tr>th {
+	border-bottom: 1px solid #000 !important;
+	border-right: 1px dotted #000 !important;;
+	width: 50px;
+	text-align: center;
+}
+
+#calendar-schedule .table>thead tr th:last-child {
+	border-right: none !important;
+}
+
+#calendar-schedule .table>thead tr:first-child th {
+	border-bottom: none !important;
+}
+
+#calendar-schedule .table>thead>tr {
+	border-bottom: 1px solid #000 !important;
+}
+
+tbody tr td {
+	text-align: left !important;
+}
+
+.dateOfWeek {
+	/* border-top: 20px; */
+	
+}
+
+#calendar-schedule .cal-week-head th {
+	border-bottom: none !important
+}
+
+#calendar-schedule .cal-week-head .table>thead tr>th {
+	border-bottom: none !important
+}
+
+.cal-week-body {
+	height: 350px;
+	border: 1px solid #000;
+	border-top: transparent;
+	/* overflow: auto; */
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-top: -20px;
+	/*    overflow-x: hidden;
+        overflow-y: hidden;*/
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.cal-week-body div {
+	/* max-width: 100% !important; */
+}
+
+.cal-process {
+	
+}
+
+.date-sat {
+	background-color: rgb(204, 255, 255);
+	color: rgb(0, 51, 204);
+}
+
+.date-sun {
+	background-color: rgb(255, 204, 255);
+	color: rgb(255, 0, 0);
+}
+
+.date-now {
+	background-color: rgb(255, 255, 0);
+}
+
+.cal-item {
+	/* width: 50px !important; */
+	text-align: center;
+	table-layout: fixed;
+}
+
+.date-other .cal-item {
+	visibility: hidden;
+}
+
+.cal-week-body .cal-vert-dash {
+	top: 0px;
+	width: 1px;
+	position: absolute;
+	display: inline-block;
+	border-right: 1px dotted #000 !important;
+	background-color: #fff;
+}
+
+.cal-week-body .cal-vert-dash-left, .cal-week-body .cal-vert-dash-right {
+	top: 0px;
+	width: 1px;
+	position: absolute;
+	display: inline-block;
+	border-right: none;
+	background-color: #fff;
+}
+
+.cal-item-wrap {
+	position: relative;
+	/*display: inline-block;*/
+}
+
+.cal-process {
+	z-index: 10;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(153, 255, 102);
+	padding: 0 10px;
+	/*    padding-bottom: 3px;
+        padding-top: 3px;*/
+	color: #000;
+	position: relative;
+	/*display: inline-block;*/
+	/*display: inline-block;*/
+	/* overflow: hidden;
+	text-overflow: ellipsis; */
+	white-space: nowrap;
+	/*display: inline-block;*/
+}
+
+.cal-process.cal-lt-aprrove {
+	background-image: url(../images/cal-reject-2.png);
+	background-repeat: repeat;
+	background-color: transparent;
+	background-size: contain;
+	border: 2px solid #90A69F;
+}
+
+/* ------------ css for calandar manufacter ---------------*/
+.cal-title {
+	z-index: 10;
+	height: 30px;
+	line-height: 30px;
+	background-color: #FFFFCC;
+	padding: 0 5px;
+	/*    padding-bottom: 3px;
+        padding-top: 3px;*/
+	color: #000;
+	position: relative;
+	/*display: inline-block;*/
+	/*display: inline-block;*/
+	/* overflow: hidden;
+	text-overflow: ellipsis; */
+	white-space: nowrap;
+	/*display: inline-block;*/
+	font-weight: bold;
+}
+
+.cal-title.cal-lt-test-name {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+}
+.cal-title.cal-lt-test-eqplace {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+	background-color: #FFFF66
+}
+
+
+.cal-process.cal-lt-first {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+	background-color: #FFFFCC
+}
+.cal-process.cal-lt-second {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+	background-color: #EED5D2
+}
+.cal-process.cal-lt-thirst {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+	background-color: #FF83FA
+}
+
+.cal-process.cal-lt-fourth {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+	background-color: #8EE5EE;
+}
+
+.cal-process.cal-lt-fifth {
+	background-repeat: repeat;
+	background-size: contain;
+	border: 0.1px solid #90A69F;
+	background-color: #CAFF70;
+}
+
+.cal-name-2 {
+	z-index: 10;
+	text-decoration: none;
+	color: rgb(0, 51, 204);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.dialog-test {
+	height: 1000px;
+	color: red;
+}
+
+#popup1{
+	background-color: red;
+	width: 500px;
+}
+
+/* ------------ end ---------------*/
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+}
+.cal-act-process {
+	z-index: 10;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(255, 102, 255);
+	padding: 0 10px;
+	/*    padding-bottom: 3px;
+        padding-top: 3px;*/
+	color: #000;
+	position: relative;
+	/*display: inline-block;*/
+	/*display: inline-block;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/*display: inline-block;*/
+}
+
+.cal-name {
+	z-index: 10;
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(0, 51, 204);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.cal-name span {
+	background-color: #ffffff;
+}
+
+.cal-process.cal-icon, .cal-act-process.cal-icon {
+	padding: 0;
+	background-color: transparent;
+}
+
+.cal-next-txt {
+	height: 30px;
+	line-height: 30px;
+	margin: 0 5px 0 0;
+	float: left;
+	padding: 0 10px;
+}
+
+.cal-process .cal-next-txt, .cal-process .cal-back-txt {
+	background-color: rgb(153, 255, 102);
+	border: 1px solid;
+}
+
+.cal-back-txt {
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0 0 5px;
+	float: left;
+	padding: 0 10px;
+}
+
+.cal-act-process .cal-next-txt, .cal-act-process .cal-back-txt {
+	background-color: rgb(255, 102, 255);
+	border: 1px solid;
+}
+
+.cal-next-group {
+	background-image: url('../images/calnext.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px;
+	display: inline-block;
+	float: left;
+}
+
+.cal-back-group {
+	background-image: url('../images/calback.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px;
+	display: inline-block;
+	float: left;
+}
+
+.cal-clear {
+	clear: both;
+}
+
+#calendar-schedule table th {
+	padding: 3px 0;
+}
+
+@media ( max-width : 1600px) {
+	#calendar-schedule, #calendar-schedule table th {
+		font-size: 14px;
+	}
+	.cal-week-body {
+		height: 358px;
+	}
+}
+
+@media ( max-width : 1440px) {
+	#calendar-schedule, #calendar-schedule table th {
+		font-size: 13px;
+	}
+	.cal-week-body {
+		height: 358px;
+	}
+}
+
+@media ( max-width : 1366px) {
+	#calendar-schedule, #calendar-schedule table th {
+		font-size: 13px;
+	}
+	.cal-week-body {
+		height: 358px;
+	}
+}
+
+tbody tr td.numberTextRight {
+	text-align: right !important;
+	padding-right: 5px !important; 
+}
+
+ table.dataTable tbody td.numberTextRight {
+   padding-right: 5px !important; 
+}
+
+.cal-month-title {
+	color: #000;
+	font-weight: 600
+}
+
+#tbl-cal-note {
+	width: 418px;
+	margin-left: auto;
+	border: none !important;
+}
+
+#tbl-cal-note tbody tr td:first-child {
+	width: 45% !important;
+}
+
+#tbl-cal-note tbody tr td:first-child  {
+	border-bottom: 1px solid #000 !important;
+	border-right: 1px solid #000 !important;
+	border-left: 1px solid #000 !important;
+	border-radius: 0px;
+	text-align: center !important;
+}
+
+#tbl-cal-note tbody tr td:last-child {
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000 !important;
+	border-radius: 0px;
+}
+#tbl-cal-note tbody tr:first-child td {
+	border-top: 1px solid #000 !important;
+}
+
+#tbl-cal-note tbody tr td.cal-lt-aprrove {
+	border: 2px solid #90A69F !important;
+}

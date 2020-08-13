@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+	<bean id="userDao" class="vn.com.nsmv.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	
+	<bean id="appConfigDao" class="vn.com.nsmv.dao.impl.AppConfigDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testDao" class="vn.com.nsmv.dao.impl.TestDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testScheduleDao" class="vn.com.nsmv.dao.impl.TestScheduleDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="requestDao" class="vn.com.nsmv.dao.impl.RequestDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="deptDao" class="vn.com.nsmv.dao.impl.DeptDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled01Dao" class="vn.com.nsmv.dao.impl.Fled01DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testOutUserDao" class="vn.com.nsmv.dao.impl.TestOutUserImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="mstDataDao" class="vn.com.nsmv.dao.impl.MstDataDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testFileDao" class="vn.com.nsmv.dao.impl.TestFileDaoIml">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="groupUserDao" class="vn.com.nsmv.dao.impl.GroupUserDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testHistoryDao" class="vn.com.nsmv.dao.impl.TestHistoryDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="mstEquipmentDao" class="vn.com.nsmv.dao.impl.MstEquipmentDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled09Dao" class="vn.com.nsmv.dao.impl.Fled09DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testEquipmentDao" class="vn.com.nsmv.dao.impl.TestEquipmentDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled07Dao" class="vn.com.nsmv.dao.impl.Fled07DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="testUserDao" class="vn.com.nsmv.dao.impl.TestUserDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled10DaoImpl" class="vn.com.nsmv.dao.impl.Fled10DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled18Dao" class="vn.com.nsmv.dao.impl.Fled18DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="feedBackDao" class="vn.com.nsmv.dao.impl.FeedBackDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled13Dao" class="vn.com.nsmv.dao.impl.Fled13DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled06Dao" class="vn.com.nsmv.dao.impl.Fled06DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled03Dao" class="vn.com.nsmv.dao.impl.Fled03DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	
+	<bean id="fled25Dao" class="vn.com.nsmv.dao.impl.Fled25DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	
+	<bean id="testNoteFileDao" class="vn.com.nsmv.dao.impl.TestNoteFileDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+
+	<bean id="fled02Dao" class="vn.com.nsmv.dao.impl.Fled02DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled19Dao" class="vn.com.nsmv.dao.impl.Fled19DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	
+	<bean id="fled11Dao" class="vn.com.nsmv.dao.impl.Fled11DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	
+	<bean id="fled04Dao" class="vn.com.nsmv.dao.impl.Fled04DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="testShizaiDao" class="vn.com.nsmv.dao.impl.TestShizaiDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	
+	<bean id="test3dDao" class="vn.com.nsmv.dao.impl.Test3dDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="test3dContentDao" class="vn.com.nsmv.dao.impl.Test3dContentDaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled15Dao" class="vn.com.nsmv.dao.impl.Fled15DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled22Dao" class="vn.com.nsmv.dao.impl.Fled22DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled16Dao" class="vn.com.nsmv.dao.impl.Fled16DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled17Dao" class="vn.com.nsmv.dao.impl.Fled17DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled08Dao" class="vn.com.nsmv.dao.impl.Fled08DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="fled26Dao" class="vn.com.nsmv.dao.impl.Fled26DaoImpl">
+		<property name="sessionFactory" ref="mySessionFactory" />
+	</bean>
+	<bean id="commentDao" class="vn.com.nsmv.dao.impl.CommentDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+    <bean id="calendarManuDao" class="vn.com.nsmv.dao.impl.CalendarManuDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+    <bean id="calManuTestDao" class="vn.com.nsmv.dao.impl.CalManuTestDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+    <bean id="attendTrainingDao" class="vn.com.nsmv.dao.impl.AttendTrainingDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+    <bean id="disasterDao" class="vn.com.nsmv.dao.impl.DisasterDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+    <bean id="protectionNotifyDao" class="vn.com.nsmv.dao.impl.ProtectionNotifyDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+    <bean id="machineSpecDao" class="vn.com.nsmv.dao.impl.MachineSpecDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+     <bean id="tokenDao" class="vn.com.nsmv.dao.impl.TokenDaoImpl">
+        <property name="sessionFactory" ref="mySessionFactory" />
+    </bean>
+</beans>

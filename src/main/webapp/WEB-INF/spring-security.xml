@@ -30,6 +30,7 @@
 		<session-management invalid-session-url="/login" />
 
 		<intercept-url pattern="/login" access="permitAll" />
+		<intercept-url pattern="/sign-up" access="permitAll" />
 
 		<intercept-url pattern="/" access="hasRole('ROLE_U')or hasRole('ROLE_M') or hasRole('ROLE_A')" />
 		<intercept-url pattern="/user/**" access="hasRole('ROLE_U')or hasRole('ROLE_M') or hasRole('ROLE_A')" />
